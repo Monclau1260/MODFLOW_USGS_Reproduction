@@ -105,14 +105,14 @@ MODFLOW_USGS_Reproduction/
 ├── LICENSE                  # MIT License
 └── README.md
 ---
-2. Prerequisites
+##2. Prerequisites
 Operating system: Windows 10/11 (tested)
 Anaconda or Miniconda (recommended)
 Git
 MODFLOW-NWT executable (mfnwt.exe), obtained from USGS distribution
 Internet connection (only needed to clone the repository)
 ---
-3. Clone the Repository
+##3. Clone the Repository
 
 From a terminal (Command Prompt, PowerShell, or Anaconda Prompt):
 ## Source Reference
@@ -121,7 +121,7 @@ This work is based on the USGS model and report:
 git clone https://github.com/Monclau1260/MODFLOW_USGS_Reproduction
 cd MODFLOW_USGS_Reproduction
 ---
-4. Create and Activate the Python Environment
+##4. Create and Activate the Python Environment
 Create a dedicated Conda environment:
 ```bash
 conda create -n modflow_usgs python=3.10
@@ -134,7 +134,7 @@ Additional packages (optional but useful):
 ```bash
 pip install scipy
 ---
-5. Add the MODFLOW-NWT Executable
+##5. Add the MODFLOW-NWT Executable
 The UMD model is built for MODFLOW-NWT.
 Download the appropriate mfnwt.exe from the official USGS distribution and place it into the bin/ directory:
 ```text
@@ -145,7 +145,7 @@ MODFLOW_USGS_Reproduction/
        └── mfnwt.exe
 The executable is intentionally excluded from this repository due to size and distribution constraints.
 ---
-6. Model Input Files
+##6. Model Input Files
 All required small model input files from the USGS UMD calibration are already present in the model/ directory, including:
 umd_fb.nam – Namefile
 umd.bas – Basic package
@@ -163,7 +163,7 @@ UMD_f.oc – Output control file
 Additional small backup/auxiliary text files
 No additional downloads of input files are required for this baseline reproduction.
 ---
-7. Running the UMD Model
+##7. Running the UMD Model
 The repository includes a Python script to execute the full baseline simulation:
 ```text
 scripts/run_model.py
@@ -182,7 +182,7 @@ logs/mf_nwt_stderr.log
 Upon successful completion, the script will return exit code 0. ! rc must be 0!
 Due to the size and length of the original USGS simulation (5,479 saved timesteps), the run may require several hours depending on hardware and disk performance.
 ---
-8. Output Files and Reproducibility
+##8. Output Files and Reproducibility
 After the model run, the model/ directory will contain large binary output files, including (but not limited to):
 UMD.hds – Binary heads
 UMD.CBC.bin – Cell-by-cell flow budget
@@ -192,7 +192,7 @@ UMD.pqm, UMD.fls, UMD.qaq, etc.
 These files are generated locally on the user’s machine; they are not tracked by Git; they are excluded via .gitignore and they Are used by notebooks and analysis scripts for post-processing.
 This design keeps the repository small while maintaining full scientific reproducibility.
 ---
-9. Post-Processing and Visualization
+##9. Post-Processing and Visualization
 The main notebook for reproducing and inspecting the baseline simulation is:
 ```text
 notebooks/01_reproduce_usgs_baseline.ipynb
@@ -227,7 +227,7 @@ Examining budget components (e.g., leakage, canal exchange, recharge contributio
 Extracting and plotting time series at specific model cells or observation locations.
 The notebook serves both as documentation and as a template for further analysis (e.g., linking heads and budgets to surface flooding indicators).
 ---
-10. .gitignore and Large Files
+##10. .gitignore and Large Files
 The .gitignore file is configured to exclude:
 Large MODFLOW output binaries (*.hds, *.cbc, *.bin, *.zta, etc.).
 MODFLOW-NWT executables (bin/, *.exe, *.dll).
@@ -236,21 +236,21 @@ Jupyter checkpoint directories (.ipynb_checkpoints/).
 OS-specific temporary files (e.g., Thumbs.db, .DS_Store).
 This ensures that large outputs are generated locally and not pushed to GitHub and executables are kept local to each user’s environment.
 ---
-11. Intended Use and Scope:
+##11. Intended Use and Scope:
 Educational use in groundwater hydrology and integrated surface-water/groundwater modeling.
 Research replication and exploration of the published USGS UMD model.
 A starting point for scenario analysis (e.g., alternative forcing, boundary conditions, or climate/event sequences).
 Integration with additional tools (e.g., machine-learning workflows, event-based flood modeling, or coupled surface-water models).
 The current focus is on baseline reproduction and post-processing. Extensions and scenario workflows can be added on top of this foundation.
 ---
-12. Citation
+##12. Citation
 This workflow underlies the USGS model in scientific and technical work, as indicated in the overview and title of this repository. 
 
 > Hughes, J.D., and White, J.T., 2016, Model archive of the simulation of hydrologic conditions and the effects of increased groundwater pumpage and increased sea level on canal leakage in the urbanized area of Miami-Dade County, Florida, 1996–2010: U.S. Geological Survey data release, https://doi.org/10.5066/F79P2ZRH  
 > Hughes, J.D., 2014, Hydrologic conditions in urban Miami-Dade County, Florida, and the effect of increased sea level on canal leakage and regional groundwater flow: U.S. Geological Survey Scientific Investigations Report 2014–5162.
 > Langevin, C.D., 2014, Documentation for the SWR1 Package—A Surface-Water Routing Process for Modeling Surface-Water and Groundwater Interactions: U.S. Geological Survey Techniques and Methods, book 6, chap. A46.
 ---
-13. License
+##13. License
 The code and configuration files in this repository are released under the MIT License.
 See the USGS LICENSE  file for full terms. The MODFLOW-NWT executable (mfnwt.exe) is distributed by USGS under its own terms.
 The conceptual and numerical model design is based on USGS work and associated publications and data releases.
