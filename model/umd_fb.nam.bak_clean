@@ -1,0 +1,128 @@
+#listing output file
+LIST            51 UMD_f.lst
+
+#model input files
+BAS6          1 UMD.bas
+DIS          10 UMD.dis            
+UPW          11 UMD.lpf               
+OC           12 UMD_f.oc
+NWT          21 UMD.nwt
+GFB          31 UMD.gfb
+ETS          32 UMD.ets
+GHB          33 UMD_Obs.ghb
+DRN          34 UMD_Obs.drn
+WEL          35 UMD.WEL
+SWR          40 UMD.swr
+SWI2         41 UMD.swi
+
+#--HYDMOD input and output
+HYD          42 UMD.hyd
+DATA(BINARY) 43 UMD.hydmod.bin REPLACE
+
+
+
+
+#binary output files
+#MODFLOW
+DATA(BINARY) 201 UMD.hds REPLACE
+
+
+DATA(BINARY) 205 UMD.CBC.bin REPLACE
+
+
+#SWI
+DATA(BINARY) 211 UMD.zta REPLACE
+
+
+#SWR
+DATA(BINARY) 101 UMD.fls REPLACE
+
+
+DATA(BINARY) 102 UMD.stg REPLACE
+
+
+DATA(BINARY) 103 UMD.qaq REPLACE
+
+
+DATA(BINARY) 104 UMD.pqm REPLACE
+
+
+DATA(BINARY) 107 UMB.SWR.OBS.bin REPLACE
+
+
+
+#ascii output
+#SWR
+#DATA        105  ../../output/output.calibration/UMD.str.csv REPLACE
+#DATA        106  ../../output/output.calibration/UMD.converge REPLACE
+
+#SWR data files
+DATA       1040 ../externalfiles/SWRREF/SWR_Dataset11.ref
+DATA       1041 ../externalfiles/SWRREF/SWR_Dataset13.ref
+DATA       1042 ../externalfiles/SWRREF/SWR_DCIA_Dataset.ref
+#--observed stage data for boundaries
+#--observed flows for inflows and outflows to pools
+DATA        501 ../externalfiles/bndref/flow/S151_C_SWR1.ref
+DATA        502 ../externalfiles/bndref/flow/S25B_P_SWR1.ref
+DATA        503 ../externalfiles/bndref/flow/S26_P_SWR1.ref
+DATA        504 ../externalfiles/bndref/flow/S331_P_SWR1.ref
+DATA        505 ../externalfiles/bndref/flow/S331_SIPH_SWR1.ref
+DATA        506 ../externalfiles/bndref/flow/S332B1_P_SWR1.ref
+DATA        507 ../externalfiles/bndref/flow/S332B2_P_SWR1.ref
+DATA        508 ../externalfiles/bndref/flow/S332C_P_SWR1.ref
+DATA        509 ../externalfiles/bndref/flow/S332DX1_C_SWR1.ref
+DATA        510 ../externalfiles/bndref/flow/S332D_P_SWR1.ref
+DATA        511 ../externalfiles/bndref/flow/S332_P_SWR1.ref
+DATA        512 ../externalfiles/bndref/gate/ClosedGate_SWR1.ref
+DATA        513 ../externalfiles/bndref/gate/DBL2_EFF_GO_SWR1.ref
+DATA        514 ../externalfiles/bndref/gate/G119_EFF_GO_SWR1.ref
+DATA        515 ../externalfiles/bndref/gate/G211_EFF_GO_SWR1.ref
+DATA        516 ../externalfiles/bndref/gate/G72_EFF_GO_SWR1.ref
+DATA        517 ../externalfiles/bndref/gate/G93_EFF_GO_SWR1.ref
+DATA        518 ../externalfiles/bndref/gate/NW25_EST_SWR1.ref
+DATA        519 ../externalfiles/bndref/gate/NW58_OPEN_SWR1.ref
+DATA        520 ../externalfiles/bndref/gate/S118_EFF_GO_SWR1.ref
+DATA        521 ../externalfiles/bndref/gate/S119_EFF_GO_SWR1.ref
+DATA        522 ../externalfiles/bndref/gate/S120_EFF_GO_SWR1.ref
+DATA        523 ../externalfiles/bndref/gate/S121_EFF_GO_SWR1.ref
+DATA        524 ../externalfiles/bndref/gate/S122_EFF_GO_SWR1.ref
+DATA        525 ../externalfiles/bndref/gate/S123_EFF_GO_SWR1.ref
+DATA        526 ../externalfiles/bndref/gate/S148_EFF_GO_SWR1.ref
+DATA        527 ../externalfiles/bndref/gate/S149_EFF_GO_SWR1.ref
+DATA        528 ../externalfiles/bndref/gate/S165_EFF_GO_SWR1.ref
+DATA        529 ../externalfiles/bndref/gate/S166_EFF_GO_SWR1.ref
+DATA        530 ../externalfiles/bndref/gate/S167_EFF_GO_SWR1.ref
+DATA        531 ../externalfiles/bndref/gate/S173_EFF_GO_SWR1.ref
+DATA        532 ../externalfiles/bndref/gate/S174_EFF_GO_SWR1.ref
+DATA        533 ../externalfiles/bndref/gate/S175_EFF_GO_SWR1.ref
+DATA        534 ../externalfiles/bndref/gate/S176_EFF_GO_SWR1.ref
+DATA        535 ../externalfiles/bndref/gate/S177_EFF_GO_SWR1.ref
+DATA        536 ../externalfiles/bndref/gate/S178_EFF_GO_SWR1.ref
+DATA        537 ../externalfiles/bndref/gate/S179_EFF_GO_SWR1.ref
+DATA        538 ../externalfiles/bndref/gate/S18C_EFF_GO_SWR1.ref
+DATA        539 ../externalfiles/bndref/gate/S194_EFF_GO_SWR1.ref
+DATA        540 ../externalfiles/bndref/gate/S195_EFF_GO_SWR1.ref
+DATA        541 ../externalfiles/bndref/gate/S196_EFF_GO_SWR1.ref
+DATA        542 ../externalfiles/bndref/gate/S197_EFF_GO_SWR1.ref
+DATA        543 ../externalfiles/bndref/gate/S20F_EFF_GO_SWR1.ref
+DATA        544 ../externalfiles/bndref/gate/S20G_EFF_GO_SWR1.ref
+DATA        545 ../externalfiles/bndref/gate/S20_EFF_GO_SWR1.ref
+DATA        546 ../externalfiles/bndref/gate/S21A_EFF_GO_SWR1.ref
+DATA        547 ../externalfiles/bndref/gate/S21_EFF_GO_SWR1.ref
+DATA        548 ../externalfiles/bndref/gate/S22_EFF_GO_SWR1.ref
+DATA        549 ../externalfiles/bndref/gate/S25A_GO_SWR1.ref
+DATA        550 ../externalfiles/bndref/gate/S25B_EFF_GO_SWR1.ref
+DATA        551 ../externalfiles/bndref/gate/S25_EFF_GO_SWR1.ref
+DATA        552 ../externalfiles/bndref/gate/S26_EFF_GO_SWR1.ref
+DATA        553 ../externalfiles/bndref/gate/S27_EFF_GO_SWR1.ref
+DATA        554 ../externalfiles/bndref/gate/S28_EFF_GO_SWR1.ref
+DATA        555 ../externalfiles/bndref/gate/S29_EFF_GO_SWR1.ref
+DATA        556 ../externalfiles/bndref/gate/S30_EFF_GO_SWR1.ref
+DATA        557 ../externalfiles/bndref/gate/S31_EFF_GO_SWR1.ref
+DATA        558 ../externalfiles/bndref/gate/S334_EFF_GO_SWR1.ref
+DATA        559 ../externalfiles/bndref/gate/S335_EFF_GO_SWR1.ref
+DATA        560 ../externalfiles/bndref/gate/S336_EFF_GO_SWR1.ref
+DATA        561 ../externalfiles/bndref/gate/S337_EFF_GO_SWR1.ref
+DATA        562 ../externalfiles/bndref/gate/S338_EFF_GO_SWR1.ref
+DATA        563 ../externalfiles/bndref/gate/S380_EFF_GO_SWR1.ref
+DATA        564 ../externalfiles/bndref/stage/VAKey_SWR1.ref

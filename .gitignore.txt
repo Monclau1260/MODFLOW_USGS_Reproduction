@@ -1,0 +1,26 @@
+# Ignore all large MODFLOW output files
+model/*.hds
+model/*.cbc
+model/*.bin
+model/*.zta
+model/*.qaq
+model/*.stg
+model/*.pqm
+model/*.fls
+model/*.hydmod*
+model/*.lst
+
+# Ignore logs
+logs/
+
+# Ignore executable binaries
+bin/
+*.exe
+*.dll
+
+# Ignore OS files
+Thumbs.db
+.DS_Store
+
+# Ignore Jupyter checkpoint files
+.ipynb_checkpoints/

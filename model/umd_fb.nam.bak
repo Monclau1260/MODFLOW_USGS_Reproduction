@@ -1,0 +1,491 @@
+#listing output file
+LIST         51 UMD_f.lst
+
+#model input files
+BAS6          1 UMD.bas
+DIS          10 UMD.dis            
+UPW          11 UMD.lpf               
+OC           12 UMD_f.oc
+NWT          21 UMD.nwt
+GFB          31 UMD.gfb
+ETS          32 UMD.ets
+GHB          33 UMD_Obs.ghb
+DRN          34 UMD_Obs.drn
+WEL          35 UMD.WEL
+SWR          40 UMD.swr
+SWI2         41 UMD.swi
+
+#--HYDMOD input and output
+HYD          42 UMD.hyd
+DATA(BINARY) 43 UMD.hydmod.bin
+
+
+
+
+
+
+
+#binary output files
+#MODFLOW
+DATA(BINARY) 201 UMD.hds REPLACE
+
+
+
+
+
+DATA(BINARY) 205 UMD.CBC.bin REPLACE
+
+
+
+
+
+#SWI
+DATA(BINARY) 211 UMD.zta REPLACE
+
+
+
+
+
+#SWR
+DATA(BINARY) 101 UMD.fls REPLACE
+
+
+
+
+
+DATA(BINARY) 102 UMD.stg REPLACE
+
+
+
+
+
+DATA(BINARY) 103 UMD.qaq REPLACE
+
+
+
+
+
+DATA(BINARY) 104 UMD.pqm REPLACE
+
+
+
+
+
+DATA(BINARY) 107 UMB.SWR.OBS.bin REPLACE
+
+
+
+
+
+
+#ascii output
+#SWR
+#DATA 105 UMD.str.csv REPLACE
+
+
+
+#DATA 106 UMD.converge REPLACE
+
+
+
+
+#SWR data files
+DATA 1040 SWR_Dataset11.ref
+
+
+
+
+
+DATA 1041 SWR_Dataset13.ref
+
+
+
+
+
+DATA 1042 SWR_DCIA_Dataset.ref
+
+
+
+
+
+#--observed stage data for boundaries
+#--observed flows for inflows and outflows to pools
+DATA 501 S151_C_SWR1.ref
+
+
+
+
+
+DATA 502 S25B_P_SWR1.ref
+
+
+
+
+
+DATA 503 S26_P_SWR1.ref
+
+
+
+
+
+DATA 504 S331_P_SWR1.ref
+
+
+
+
+
+DATA 505 S331_SIPH_SWR1.ref
+
+
+
+
+
+DATA 506 S332B1_P_SWR1.ref
+
+
+
+
+
+DATA 507 S332B2_P_SWR1.ref
+
+
+
+
+
+DATA 508 S332C_P_SWR1.ref
+
+
+
+
+
+DATA 509 S332DX1_C_SWR1.ref
+
+
+
+
+
+DATA 510 S332D_P_SWR1.ref
+
+
+
+
+
+DATA 511 S332_P_SWR1.ref
+
+
+
+
+
+DATA 512 ClosedGate_SWR1.ref
+
+
+
+
+
+DATA 513 DBL2_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 514 G119_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 515 G211_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 516 G72_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 517 G93_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 518 NW25_EST_SWR1.ref
+
+
+
+
+
+DATA 519 NW58_OPEN_SWR1.ref
+
+
+
+
+
+DATA 520 S118_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 521 S119_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 522 S120_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 523 S121_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 524 S122_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 525 S123_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 526 S148_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 527 S149_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 528 S165_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 529 S166_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 530 S167_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 531 S173_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 532 S174_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 533 S175_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 534 S176_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 535 S177_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 536 S178_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 537 S179_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 538 S18C_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 539 S194_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 540 S195_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 541 S196_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 542 S197_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 543 S20F_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 544 S20G_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 545 S20_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 546 S21A_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 547 S21_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 548 S22_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 549 S25A_GO_SWR1.ref
+
+
+
+
+
+DATA 550 S25B_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 551 S25_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 552 S26_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 553 S27_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 554 S28_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 555 S29_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 556 S30_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 557 S31_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 558 S334_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 559 S335_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 560 S336_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 561 S337_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 562 S338_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 563 S380_EFF_GO_SWR1.ref
+
+
+
+
+
+DATA 564 VAKey_SWR1.ref

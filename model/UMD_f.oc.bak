@@ -1,0 +1,11 @@
+# Minimal, portable Output Control for MF2005/NWT
+# Tell MF to save head and budget; then apply to ALL periods/steps
+HEAD SAVE UNIT 201
+BUDGET SAVE UNIT 205
+PRINT HEAD
+PRINT BUDGET
+# Apply to ALL stress periods and ALL time steps
+# This pattern works broadly across MF2005-family OC:
+HEAD SAVE
+BUDGET SAVE
+PERIOD 1 ALL

@@ -1,0 +1,12 @@
+
+                                  MODFLOW-NWT-SWR1 
+    U.S. GEOLOGICAL SURVEY MODULAR FINITE-DIFFERENCE GROUNDWATER-FLOW MODEL
+                             WITH NEWTON FORMULATION
+                             Version 1.0.8 09/01/2013                        
+                    BASED ON MODFLOW-2005 Version 1.11.0 08/08/2013                       
+
+                    SWR1 Version 1.04.0 03/06/2014                       
+
+ Using NAME file: umd_fb.nam 
+ Run start date and time (yyyy/mm/dd hh:mm:ss): 2025/11/06 16:55:25
+
