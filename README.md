@@ -26,47 +26,6 @@ All required **small model input files** (for example, `umd.bas`, `umd.dis`, `um
 Large output files (e.g., `UMD.hds`, `UMD.CBC.bin`, `UMD.zta`) are **not** included and will be generated locally when the model is executed. They are excluded from version control via `.gitignore` to keep the repository lightweight.
 
 ---
-
-## 1. Repository Structure
-
-```text
-MODFLOW_USGS_Reproduction/
-│
-├── bin/                      # User-supplied MODFLOW-NWT executable (mfnwt.exe)
-├── data/                     # Optional supplemental data (not required for baseline run)
-├── model/                    # USGS model input files (small, text-based)
-│     ├── umd_fb.nam          # Namefile
-│     ├── umd.bas             # BAS package
-│     ├── umd.dis             # DIS package
-│     ├── umd.lpf             # LPF package
-│     ├── umd.ets             # ETS package
-│     ├── umd.swr             # SWR package
-│     ├── umd.swi             # SWI package
-│     ├── umd.hyd             # HYDMOD definitions
-│     ├── umd.gfb             # Boundary / GHB-related package
-│     ├── umd.nwt             # NWT solver options
-│     ├── umd.wel             # WEL package
-│     ├── umd_obs.drn         # Drain observations
-│     ├── umd_obs.ghb         # GHB observations
-│     ├── UMD_f.oc            # Output control
-│     └── ...                 # Other small input/backup files
-│
-├── notebooks/
-│     └── 01_reproduce_usgs_baseline.ipynb
-│                            # Main Jupyter notebook for baseline reproduction
-│
-├── scripts/
-│     └── run_model.py       # Python driver script to execute MODFLOW-NWT
-│
-├── logs/                    # Runtime logs (created automatically)
-│     ├── mf_nwt_stdout.log
-│     └── mf_nwt_stderr.log
-│
-├── .gitignore               # Excludes large binaries, executables, logs from version control
-├── LICENSE                  # MIT License
-└── README.md
-
----
 ## 1. Repository Structure
 ```text
 MODFLOW_USGS_Reproduction/
